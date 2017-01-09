@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11760" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Horse_Care_with_Apple_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Device Label" textAlignment="center" id="GRQ-M6-Jgy"/>
+                        <imageView width="39" height="36" alignment="left" image="Heart" id="11J-ax-c2a"/>
+                        <label width="41" height="33" alignment="center" text="---" textAlignment="center" id="IrY-Rw-cQa"/>
+                        <label alignment="center" text="BPM" id="Svr-2C-dxI">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Start" id="Bdc-BY-TmD">
+                            <connections>
+                                <action selector="startBtnTapped" destination="AgC-eL-Hgc" id="0dh-uP-M8k"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="Heart" destination="11J-ax-c2a" id="5hH-4e-gjD"/>
+                        <outlet property="deviceLabel" destination="GRQ-M6-Jgy" id="Z5b-R0-PXS"/>
+                        <outlet property="label" destination="IrY-Rw-cQa" id="XIt-bE-b8Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="135" y="96.5"/>
+        </scene>
+    </scenes>
+</document>
